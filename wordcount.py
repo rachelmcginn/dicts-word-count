@@ -9,7 +9,9 @@ def wordcount(file_name):
         all_words.extend(line.split(' '))
 
     word_count = {}
+
     for word in all_words:
+        word = word.lower()
         if word not in word_count:
             word_count[word] = 1
         else:
